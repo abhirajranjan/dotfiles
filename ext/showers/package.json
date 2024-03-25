@@ -2,7 +2,7 @@
   "name": "showers",
   "displayName": "showers",
   "description": "new color scheme, hehe",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.77.0"
   },
@@ -17,5 +17,9 @@
         "path": "./themes/showers-color-theme.json"
       }
     ]
+  },
+  "repository": "https://github.com/abhirajranjan/dotfiles",
+  "dependencies": {
+    "@vscode/vsce": "^2.24.0"
   }
 }
