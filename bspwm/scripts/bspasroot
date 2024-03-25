@@ -5,9 +5,8 @@
 # bspwm directory
 DIR="$HOME/.config/bspwm"
 
-# Launch dunst daemon
-if [[ `pidof dunst` ]]; then
-	pkill dunst
-fi
+# rofi sudo askpass helper
+export SUDO_ASKPASS="$DIR"/scripts/rofi_askpass
 
-dunst -config "$DIR"/dunstrc &
+# execute the application
+sudo -A $1

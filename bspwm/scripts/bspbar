@@ -2,11 +2,12 @@
 
 ## Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
 
-CONFIG="$HOME/.config"
+# bspwm directory
+DIR="$HOME/.config/bspwm"
 
 # fix padding
 bspc config bottom_padding 0
 bspc config top_padding 0
 
 # launch polybar
-bash "$CONFIG"/polybar/polybar.sh
+bash "$DIR"/polybar.sh

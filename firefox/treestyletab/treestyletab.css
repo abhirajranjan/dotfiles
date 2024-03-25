@@ -2,7 +2,7 @@
 Go to https://github.com/piroor/treestyletab/wiki/Code-snippets-for-custom-style-rules#favicon-of-tabs
 for some information on how to change these variables...
 */
-/* Main sass file that contains the theme */ /* Main sass file that contains the theme */
+/* Main sass file that contains the theme */
 :root {
   --ap-radius-s: 4px;
   --ap-radius-m: 8px;
@@ -12,34 +12,42 @@ for some information on how to change these variables...
   --ap-primary-s: 64%;
   --ap-primary-l: 88%;
   --ap-primary-d: 80%;
-  --ap-primary: hsl(var(--ap-primary-h), var(--ap-primary-s), var(--ap-primary-l));
+  --ap-primary: hsl(
+    var(--ap-primary-h),
+    var(--ap-primary-s),
+    var(--ap-primary-l)
+  );
   --ap-secondary-h: 157;
   --ap-secondary-s: 32%;
   --ap-secondary-l: 58%;
   --ap-secondary-d: 70%;
-  --ap-secondary: hsl(var(--ap-secondary-h), var(--ap-secondary-s), var(--ap-secondary-l));
+  --ap-secondary: hsl(
+    var(--ap-secondary-h),
+    var(--ap-secondary-s),
+    var(--ap-secondary-l)
+  );
   --ap-base1-h: 249;
   --ap-base1-s: 33%;
   --ap-base1-l: 8%;
   --ap-base1-d: 10%;
-  --ap-bg0: hsl(var(--ap-base0-h), var(--ap-base0-s), var(--ap-base0-l));
+  --ap-base0: hsl(var(--ap-base0-h), var(--ap-base0-s), var(--ap-base0-l));
   --ap-base0-h: 250;
   --ap-base0-s: 23%;
   --ap-base0-l: 5%;
   --ap-base0-d: 13%;
-  --ap-bg1: hsl(var(--ap-base1-h), var(--ap-base1-s), var(--ap-base1-l));
-  --ap-red: #E97193;
-  --ap-green: #AAC5A0;
-  --ap-blue: #A8C5E6;
-  --ap-purple: #DFA7E7;
+  --ap-base1: hsl(var(--ap-base1-h), var(--ap-base1-s), var(--ap-base1-l));
+  --ap-red: #e97193;
+  --ap-green: #aac5a0;
+  --ap-blue: #a8c5e6;
+  --ap-purple: #dfa7e7;
   --ap-aqua: #a8e5e6;
   --ap-yellow: #ece0a8;
-  --ap-orange: #D1A999;
-  --ap-color-strong: #E97193;
-  --ap-color-quote: #E97193;
-  --ap-color-italic: #E97193;
+  --ap-orange: #d1a999;
+  --ap-color-strong: #e97193;
+  --ap-color-quote: #e97193;
+  --ap-color-italic: #e97193;
   --ap-color-tag-background: #2c2537;
-  --ap-color-tag-text: #EEEEEE;
+  --ap-color-tag-text: #eeeeee;
   --ap-code-gray-1: #5b5c5f;
   --ap-code-gray-2: #45474c;
   --ap-code-red: var(--ap-red);
@@ -51,16 +59,56 @@ for some information on how to change these variables...
   --ap-code-orange: var(--ap-orange);
   --ap-color-dp0: hsl(var(--ap-base1-h), var(--ap-base1-s), var(--ap-base1-l));
   --ap-color-dp1: hsl(var(--ap-base0-h), var(--ap-base0-s), var(--ap-base0-l));
-  --ap-color-dp2: hsl(var(--ap-base0-h), var(--ap-base0-s), calc(var(--ap-base0-l) + 10%));
-  --ap-color-dp3: hsl(var(--ap-base0-h), var(--ap-base0-s), calc(var(--ap-base0-l) + 20%));
-  --ap-color-dp4: hsl(var(--ap-base0-h), var(--ap-base0-s), calc(var(--ap-base0-l) + 30%));
-  --ap-color-dp5: hsl(var(--ap-base0-h), var(--ap-base0-s), calc(var(--ap-base0-l) + 40%));
-  --ap-color-dp6: hsl(var(--ap-base0-h), var(--ap-base0-s), calc(var(--ap-base0-l) + 50%));
-  --ap-color-dp7: hsl(var(--ap-base0-h), var(--ap-base0-s), calc(var(--ap-base0-l) + 60%));
-  --ap-color-dp8: hsl(var(--ap-base0-h), var(--ap-base0-s), calc(var(--ap-base0-l) + 70%));
-  --ap-color-dp9: hsl(var(--ap-base0-h), var(--ap-base0-s), calc(var(--ap-base0-l) + 80%));
-  --ap-color-dp10: hsl(var(--ap-base0-h), var(--ap-base0-s), calc(var(--ap-base0-l) + 95%));
-  --ap-color-dp11: hsl(var(--ap-base0-h), var(--ap-base0-s), calc(var(--ap-base0-l) + 100%));
+  --ap-color-dp2: hsl(
+    var(--ap-base0-h),
+    var(--ap-base0-s),
+    calc(var(--ap-base0-l) + 5%)
+  );
+  --ap-color-dp3: hsl(
+    var(--ap-base0-h),
+    var(--ap-base0-s),
+    calc(var(--ap-base0-l) + 10%)
+  );
+  --ap-color-dp4: hsl(
+    var(--ap-base0-h),
+    var(--ap-base0-s),
+    calc(var(--ap-base0-l) + 15%)
+  );
+  --ap-color-dp5: hsl(
+    var(--ap-base0-h),
+    var(--ap-base0-s),
+    calc(var(--ap-base0-l) + 40%)
+  );
+  --ap-color-dp6: hsl(
+    var(--ap-base0-h),
+    var(--ap-base0-s),
+    calc(var(--ap-base0-l) + 50%)
+  );
+  --ap-color-dp7: hsl(
+    var(--ap-base0-h),
+    var(--ap-base0-s),
+    calc(var(--ap-base0-l) + 60%)
+  );
+  --ap-color-dp8: hsl(
+    var(--ap-base0-h),
+    var(--ap-base0-s),
+    calc(var(--ap-base0-l) + 70%)
+  );
+  --ap-color-dp9: hsl(
+    var(--ap-base0-h),
+    var(--ap-base0-s),
+    calc(var(--ap-base0-l) + 80%)
+  );
+  --ap-color-dp10: hsl(
+    var(--ap-base0-h),
+    var(--ap-base0-s),
+    calc(var(--ap-base0-l) + 85%)
+  );
+  --ap-color-dp11: hsl(
+    var(--ap-base0-h),
+    var(--ap-base0-s),
+    calc(var(--ap-base0-l) + 90%)
+  );
   --ap-h1: var(--ap-red);
   --ap-h2: var(--ap-purple);
   --ap-h3: var(--ap-blue);
@@ -78,50 +126,18 @@ for some information on how to change these variables...
   --ap-size-text-item: 1em;
   --ap-container-padding: 8px;
   --ap-frame-left: 10px;
-  --ap-font-text: ;
-  --ap-font-interface: ;
-  --ap-font-title: ;
-  --ap-font-cursive: ;
-  --ap-font-bold: ;
-  --ap-font-link: ;
-  --ap-font-hashtag: ;
-}
-
-:root {
-  --ap-primary-h: 15.3846153846deg;
-  --ap-primary-s: 63.9344262295%;
-  --ap-primary-l: 88.0392156863%;
-  --ap-primary-d: 80%;
-  --ap-primary: #F4D7CD;
-  --ap-secondary-h: 157.0588235294deg;
-  --ap-secondary-s: 31.7757009346%;
-  --ap-secondary-l: 58.0392156863%;
-  --ap-secondary-d: 70%;
-  --ap-secondary: #72b69c;
-  --ap-base0-h: 250deg;
-  --ap-base0-s: 23.0769230769%;
-  --ap-base0-l: 5.0980392157%;
-  --ap-base0-d: 20%;
-  --ap-bg0: #0B0A10;
-  --ap-base1-h: 250deg;
-  --ap-base1-s: 23.0769230769%;
-  --ap-base1-l: 8.0980392157%;
-  --ap-base1-d: 20%;
-  --ap-bg1: #111019;
-  --ap-red: #E97193;
-  --ap-green: #AAC5A0;
-  --ap-blue: #A8C5E6;
-  --ap-purple: #DFA7E7;
-  --ap-aqua: #a8e5e6;
-  --ap-yellow: #ece0a8;
-  --ap-orange: #D1A999;
-  --ap-color-strong: #E97193;
-  --ap-color-quote: #E97193;
-  --ap-color-italic: #E97193;
-  --ap-color-tag-background: #2c2537;
-  --ap-color-tag-text: #EEEEEE;
-  --ap-color-dp0: #111019;
-  --ap-color-dp1: #0B0A10;
+  --ap-font-text: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter,
+    Ubuntu, sans-serif;
+  --ap-font-interface: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Inter, Ubuntu, sans-serif;
+  --ap-font-monospace: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Inter, Ubuntu, sans-serif;
+  --ap-font-title: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter,
+    Ubuntu, sans-serif;
+  --ap-font-header: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter,
+    Ubuntu, sans-serif;
+  --ap-font-hashtag: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Inter, Ubuntu, sans-serif;
 }
 
 :root {
@@ -145,44 +161,44 @@ for some information on how to change these variables...
 }
 
 :root.incognito {
-  --dark-0: #1C0E34;
+  --dark-0: #1c0e34;
   --dark-base: #20103c;
-  --dark-1: #2F1D4E;
-  --dark-2: #38225D;
-  --dark-3: #4A2D7B;
-  --dark-4: #53338A;
-  --light-0: #CC6B9C;
-  --light-base: #B9407C;
-  --light-1: #AB3B73;
-  --light-2: #9C3569;
-  --light-3: #8D305E;
-  --light-4: #7D2B54;
+  --dark-1: #2f1d4e;
+  --dark-2: #38225d;
+  --dark-3: #4a2d7b;
+  --dark-4: #53338a;
+  --light-0: #cc6b9c;
+  --light-base: #b9407c;
+  --light-1: #ab3b73;
+  --light-2: #9c3569;
+  --light-3: #8d305e;
+  --light-4: #7d2b54;
   --accent: #e9207e;
-  --yellow: #C9B336;
-  --green: #36C987;
-  --red: #C9365D;
+  --yellow: #c9b336;
+  --green: #36c987;
+  --red: #c9365d;
   /* --extension-icon-mask: grayscale(85%) invert(13%) sepia(80%) saturate(3107%) hue-rotate(256deg) brightness(84%) contrast(93%); */
 }
 
 :root {
-  --tab-border-radius: 10px;
+  --tab-border-radius: 8px;
   /* border radius of tabs */
   --animation-duration: 200ms;
   /* duration of different animations [0s: turn all animations off] */
-  --spacing: 20px;
+  --spacing: 10px;
   /* spacing between tabs. [<15px: compact tabs] */
   --distance-from-edge: 7px;
   /* distance between tabs, and left-right edges of sidebar*/
-  --hover-text-spacing: 0.2;
+  --hover-text-spacing: 0.325;
   /* should be left alone. with hover sidebar, if text is visible in collapsed status, increase this */
   --ease-in: cubic-bezier(0.32, 0, 0.67, 0);
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
   --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
-  --collapsed-width: 60px;
-  --contextual-identity-color-blue: #63B3ED;
-  --contextual-identity-color-orange: #F6AD55;
-  --contextual-identity-color-green: #68D391;
-  --contextual-identity-color-pink: #F687B3;
+  --collapsed-width: 70px;
+  --contextual-identity-color-blue: #63b3ed;
+  --contextual-identity-color-orange: #f6ad55;
+  --contextual-identity-color-green: #68d391;
+  --contextual-identity-color-pink: #f687b3;
 }
 
 /************UNCUSTOMIZED CSS************/
@@ -196,7 +212,7 @@ for some information on how to change these variables...
 }
 
 #all-tabs {
-  margin: 10px var(--distance-from-edge);
+  margin: 50px var(--distance-from-edge);
 }
 
 tab-item > * {
@@ -208,7 +224,7 @@ tab-item:not(.collapsed) {
   /* border-radius: 0px var(--tab-border-radius) var(--tab-border-radius) 0px; */
   border-radius: var(--tab-border-radius);
   border: none !important;
-  height: 34px !important;
+  height: 48px !important;
   justify-content: center;
 }
 
@@ -229,7 +245,7 @@ tab-item:not([data-level="0"]):not(.pinned) {
 
 tab-item tab-favicon {
   left: 0;
-  filter: var(--extension-icon-mask);
+  /* filter: var(--extension-icon-mask); */
   transition: transform calc(var(--animation-duration) * 2) var(--ease-out);
 }
 
@@ -238,13 +254,14 @@ tab-item tab-favicon {
 }
 
 tab-item {
+  --tab-margin-top: 30px;
   --tab-size: 34px !important;
-  margin: 4px;
 }
 
 tab-item tab-item-substance {
   height: var(--tab-size);
   padding: 4px 0px 4px 4px;
+  margin: 4px;
 }
 
 tab-item tab-item-substance .active {
@@ -255,6 +272,7 @@ tab-item .label {
   color: var(--light-1) !important;
   padding-bottom: 2px;
   padding-left: 8px;
+  margin-top: 4px;
 }
 
 /*The drop-down ">" button*/
@@ -268,7 +286,7 @@ tab-item.active .label {
 }
 
 tab-item.active {
-  background: var(--dark-3) !important;
+  background: var(--dark-4) !important;
 }
 
 tab-item:not(.active).highlighted {
@@ -285,6 +303,7 @@ tab-item:hover tab-closebox {
 }
 
 tab-item:not(pinned) tab-closebox {
+  /* background: var(--light-1) !important; */
   position: absolute;
   margin-top: 2px;
   height: 20px;
@@ -294,7 +313,7 @@ tab-item:not(pinned) tab-closebox {
   padding-top: 2px;
   padding-left: 2px;
   opacity: 1;
-  /* background: var(--light-4); */
+  background: var(--light-4);
   transition: all var(--animation-duration) var(--ease-out);
 }
 
@@ -313,11 +332,11 @@ tab-closebox:hover {
   color: var(--light-1) !important;
   background: rgba(66, 66, 66, 0.2666666667) !important;
   border-radius: 5px;
-  margin: 0px 4px;
-  padding: 2px 5px;
+  margin: 0px 6px;
+  padding: 4px 5px;
   font-weight: bold;
   /* padding-bottom: 2px; */
-  order: -1 !important;
+  order: 0 !important;
 }
 
 .counter:before,
@@ -343,7 +362,9 @@ tab-closebox:hover {
 
 :root.left tab-item .label {
   transform: translateX(0px);
-  margin-right: calc(var(--collapsed-width) * var(--hover-text-spacing)) !important;
+  margin-right: calc(
+    var(--collapsed-width) * var(--hover-text-spacing)
+  ) !important;
   transition: all var(--animation-duration) var(--ease-out);
 }
 
@@ -369,15 +390,16 @@ tab-closebox:hover {
   /* change for light theme */
 }
 
-.tab[data-current-favicon-uri=undefined] .favicon .favicon-default::before {
-  background: url("chrome://branding/content/identity-icons-brand.svg") no-repeat center !important;
+.tab[data-current-favicon-uri="undefined"] .favicon .favicon-default::before {
+  background: url("chrome://branding/content/identity-icons-brand.svg")
+    no-repeat center !important;
   mask: none !important;
 }
 
 /***********NEW TAB BUTTON**********/
 .newtab-button-box {
   border: none !important;
-  margin: 0 50px;
+  margin: 15px 50px;
 }
 
 .newtab-button {
@@ -395,6 +417,10 @@ tab-closebox:hover {
   border: none !important;
   margin-right: 10px;
   margin-top: 3px;
+}
+
+.newtab-button::after, .newtab-action-selector-anchor::after {
+  background: var(--light-2) !important;
 }
 
 .newtab-button:hover {
@@ -429,19 +455,19 @@ tab-item.active .contextual-identity-marker {
 }
 
 tab-item.active.contextual-identity-firefox-container-1 {
-  background: linear-gradient(to right, #D53F8C, #9F7AEA) !important;
+  background: linear-gradient(to right, #d53f8c, #9f7aea) !important;
 }
 
 tab-item.active.contextual-identity-firefox-container-2 {
-  background: linear-gradient(to right, #DD6B20, #F56565) !important;
+  background: linear-gradient(to right, #dd6b20, #f56565) !important;
 }
 
 tab-item.active.contextual-identity-firefox-container-3 {
-  background: linear-gradient(to right, #38A169, #38B2AC) !important;
+  background: linear-gradient(to right, #38a169, #38b2ac) !important;
 }
 
 tab-item.active.contextual-identity-firefox-container-4 {
-  background: linear-gradient(to right, #3182CE, #0BC5EA) !important;
+  background: linear-gradient(to right, #3182ce, #0bc5ea) !important;
 }
 
 /***********************************/
