@@ -1,0 +1,21 @@
+{
+  "name": "showers",
+  "displayName": "showers",
+  "description": "new color scheme, hehe",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "showers",
+        "uiTheme": "vs-dark",
+        "path": "./themes/showers-color-theme.json"
+      }
+    ]
+  }
+}
