@@ -1,1 +1,0 @@
-pactl list sink-inputs
